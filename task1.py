@@ -9,9 +9,21 @@ Example:
 assert find('apple') == 0
 assert find('fish') == 5
 '''
+'''
 def find(needle):
-    pass
+    file = open('task01.txt','r')
+    hay = file.read()
+    haystack = hay.split('\n')
+    for i in range(len(haystack)):
+        if haystack[i] == needle:
+            print(haystack[i],i)
+            return i
+'''
 
+def find(needle):
+    haystack = open('task01.txt','r').read().split('\n')
+    if needle in haystack:
+        return haystack.index(needle)
 
 if __name__ == "__main__":
     assert find('apple') == 0

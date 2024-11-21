@@ -1,9 +1,3 @@
-a
-b
-c
-de
-f
-asdf
-asd
-asd
+go
+something
 
