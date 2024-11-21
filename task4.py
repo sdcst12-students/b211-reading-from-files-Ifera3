@@ -13,7 +13,17 @@ Create a function that reads the specific value for a specific level and an armo
 """
 
 def target(lvl,ac):
-    return
+    fileName = 'task04.txt'
+    file = open(fileName,'r')
+    fighterTable = file.read().split('\n')
+    for i in range(len(fighterTable)):
+        fighterTable[i] = fighterTable[i].split(' ')
+        for colum in range(len(fighterTable[i])):
+            fighterTable[i][colum] = int(fighterTable[i][colum])
+    #print(fighterTable)
+    print(fighterTable[lvl-1][-ac + 10])
+    return fighterTable[lvl-1][-ac + 10]
+
 
 
 def tests():

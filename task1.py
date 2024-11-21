@@ -1,4 +1,5 @@
 #!python3
+
 '''
 Read the data from the file task01.txt
 Create a function called find().
@@ -9,6 +10,7 @@ Example:
 assert find('apple') == 0
 assert find('fish') == 5
 '''
+
 '''
 def find(needle):
     file = open('task01.txt','r')
