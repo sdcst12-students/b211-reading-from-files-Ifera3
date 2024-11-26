@@ -25,7 +25,7 @@ def main():
         stock = i.split(',',maxsplit=1)
         #print(stock)
         stockSymbols[stock[0]] = stock[1]
-    #print(stockSymbols) # ends at BONA index 364 in data
+    #print(stockSymbols) #fails to print full dictionary
     symbol = input('Enter stock symbol: ').upper()
     repeat = 0
     for i in stockSymbols:
