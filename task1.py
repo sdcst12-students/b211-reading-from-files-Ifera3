@@ -25,6 +25,7 @@ def find(needle):
 def find(needle):
     haystack = open('task01.txt','r').read().split('\n')
     if needle in haystack:
+        print(haystack.index(needle))
         return haystack.index(needle)
 
 if __name__ == "__main__":

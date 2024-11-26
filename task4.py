@@ -20,16 +20,18 @@ def target(lvl,ac):
         fighterTable[i] = fighterTable[i].split(' ')
         for colum in range(len(fighterTable[i])):
             fighterTable[i][colum] = int(fighterTable[i][colum])
-    #print(fighterTable)
-    print(fighterTable[lvl-1][-ac + 10])
-    return fighterTable[lvl-1][-ac + 10]
+    #for i in fighterTable:
+        #print(i, len(i))
+    print(fighterTable[lvl-1][(-ac) + 10])
+    #print(lvl - 1, (-ac) + 10)
+    return fighterTable[lvl-1][(-ac) + 10]
 
 
 
 def tests():
-    assert target(3,7) == 23
-    assert target(9,-1) == 17
-    assert target(13,-10) == 20
+    assert target(3,7) == 13 
+    assert target(9,-1) == 17 
+    assert target(13,-10) == 20 
 
-if __name__=="__main__":
+if __name__ == "__main__":
     tests()
